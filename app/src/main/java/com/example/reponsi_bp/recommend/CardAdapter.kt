@@ -19,6 +19,7 @@ class CardAdapter (private val data: ArrayList<CardAtas>) : RecyclerView.Adapter
             Toast.makeText(holder.itemView.context, "Click ${data[position].judul}", Toast.LENGTH_SHORT).show()
             val intent = Intent(holder.itemView.context, PenjelasanLayout::class.java)
             intent.putExtra("judul", data[position].judul)
+            intent.putExtra("desk", data[position].desk)
 
             holder.itemView.context.startActivity(intent)
         }

@@ -31,7 +31,7 @@ class CardAtasAdapter : RecyclerView.Adapter<CardAtasAdapter.ViewHolder>() {
         var bgColor: CardView
 
         init {
-            itemImage = itemView.findViewById(R.id.gambarItem)
+            itemImage = itemView.findViewById(R.id.imageView)
             itemName = itemView.findViewById(R.id.textItem)
             bgColor = itemView.findViewById(R.id.cardItem)
         }

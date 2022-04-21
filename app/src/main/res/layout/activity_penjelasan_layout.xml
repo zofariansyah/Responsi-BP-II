@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PenjelasanLayout">
+    android:background="@color/white"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/lightBlue">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/searchbg"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/txtnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Candra Zofariansyah"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/txtKidsEdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kids Educational App"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtNamaGuru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtKidsEdu"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Tentang Mapel"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDeskGuru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNamaGuru"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu id aliquet. Mauris quis rutrum ipsum. Nulla sit amet pretium tortor. Ut scelerisque est eu euismod rhoncus. Suspendisse sed magna ipsum. Nullam vel dui a erat hendrerit malesuada. Sed odio ante, viverra at velit eget, semper vestibulum elit. Nunc nec cursus odio. Quisque venenatis dui aliquam, condimentum leo vitae, euismod neque."
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ikuti Mapel"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/darkBlue"
+            android:background="@drawable/button"
+            />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

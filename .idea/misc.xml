@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/drawable/button.xml" value="0.1" />
+        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/drawable/cardlist.xml" value="0.1" />
         <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/drawable/cardsearch.xml" value="0.3085" />
         <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3085" />
         <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/activity_penjelasan_layout.xml" value="0.1" />
-        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/card_layout.xml" value="0.15" />
-        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/cardhorizontal.xml" value="0.12" />
+        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/activity_penjelasan_layout.xml" value="0.22" />
+        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/card_layout.xml" value="0.2" />
+        <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/cardhorizontal.xml" value="0.5" />
         <entry key="..\:/Perkuliahan/Semester 4/BP II/Responsi/app/src/main/res/layout/cardsearch.xml" value="0.32760416666666664" />
       </map>
     </option>

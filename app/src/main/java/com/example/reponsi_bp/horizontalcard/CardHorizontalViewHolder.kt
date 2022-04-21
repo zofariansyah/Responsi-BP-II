@@ -14,16 +14,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.reponsi_bp.PenjelasanLayout
 import com.example.reponsi_bp.R
 import com.example.reponsi_bp.recommend.CardAtas
+import org.w3c.dom.Text
 
 class CardHorizontalViewHolder (inflater: LayoutInflater, parent: ViewGroup) : RecyclerView.ViewHolder(inflater.inflate(
     R.layout.cardhorizontal,parent,false)){
     private var imgView: ImageView? = null
     private var txtTitle: TextView? = null
+
     private var color: CardView? = null
 
     init {
-        imgView = itemView.findViewById(R.id.itemImage)
-        txtTitle = itemView.findViewById(R.id.itemNama)
+        imgView = itemView.findViewById(R.id.imageView)
+        txtTitle = itemView.findViewById(R.id.textItem)
+
+       // color = itemView.findViewById(R.id.cardItem)
 
 
     }

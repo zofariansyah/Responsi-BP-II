@@ -1,5 +1,6 @@
 package com.example.reponsi_bp
 
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         supportActionBar?.hide()
          recyclerInit()
         recyclerHorizonInit()
@@ -37,10 +39,10 @@ class MainActivity : AppCompatActivity() {
     private fun recyclerInit(){
         recyclerView = findViewById(R.id.recyclerViewAtas)
         var data = ArrayList<CardAtas>()
-        data.add(CardAtas("Math", R.drawable.ic_launcher_background, R.color.black))
-        data.add(CardAtas("Math", R.drawable.ic_launcher_background, R.color.black))
-        data.add(CardAtas("Math", R.drawable.ic_launcher_background, R.color.black))
-        data.add(CardAtas("Math", R.drawable.ic_launcher_background, R.color.black))
+        data.add(CardAtas("Guru Matematika", "Deskripsi Matematika",R.drawable.boy1, R.color.black))
+        data.add(CardAtas("Guru IPA", "Deskripsi IPA",R.drawable.boy1, R.color.black))
+        data.add(CardAtas("Guru B Indo", "Deskripsi B Indo\"",R.drawable.girl, R.color.black))
+        data.add(CardAtas("Gurumuuu", "Deskripsi Gurumuuu",R.drawable.boy2, R.color.black))
 
         adapter = CardAdapter(data)
 
@@ -50,10 +52,10 @@ class MainActivity : AppCompatActivity() {
     private fun recyclerHorizonInit(){
         recyclerViewHorizontal = findViewById(R.id.recyclerViewAtasHorizontal)
         var data = ArrayList<CardHorizontal>()
-        data.add(CardHorizontal("Math", R.drawable.ic_launcher_foreground, R.color.black))
-        data.add(CardHorizontal("Math", R.drawable.ic_launcher_foreground, R.color.black))
-        data.add(CardHorizontal("Math", R.drawable.ic_launcher_background, R.color.black))
-        data.add(CardHorizontal("Math", R.drawable.ic_launcher_background, R.color.black))
+        data.add(CardHorizontal("Math", applicationContext.getString(R.string.lorem)  ,R.drawable.icon1, R.color.lightBlue))
+        data.add(CardHorizontal("Fisika", applicationContext.getString(R.string.lorem) ,R.drawable.icon2, R.color.yellow))
+        data.add(CardHorizontal("IPA",  applicationContext.getString(R.string.lorem) ,R.drawable.icon3, R.color.pink))
+        data.add(CardHorizontal("Baper II",  applicationContext.getString(R.string.lorem) ,R.drawable.icon1, R.color.yellow))
 
         adapterHorizontal = CardHorizontalAdapter(data)
 
