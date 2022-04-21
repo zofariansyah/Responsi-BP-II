@@ -1,4 +1,4 @@
-package com.example.reponsi_bp
+package com.example.reponsi_bp.recommend
 
 
 data class CardAtas (

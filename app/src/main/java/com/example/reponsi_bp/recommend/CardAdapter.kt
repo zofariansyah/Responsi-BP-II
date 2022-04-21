@@ -1,4 +1,4 @@
-package com.example.reponsi_bp
+package com.example.reponsi_bp.recommend
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.reponsi_bp.PenjelasanLayout
 
 class CardAdapter (private val data: ArrayList<CardAtas>) : RecyclerView.Adapter<CardViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
